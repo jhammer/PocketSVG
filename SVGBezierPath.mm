@@ -169,16 +169,16 @@
         for (NSInteger i = 0; i < self.elementCount; ++i) {
             NSPoint pt[3];
             switch ([self elementAtIndex:i associatedPoints:pt]) {
-                case NSMoveToBezierPathElement:
+                case NSBezierPathElementMoveTo:
                     CGPathMoveToPoint(path, NULL, pt[0].x, pt[0].y);
                     break;
-                case NSLineToBezierPathElement:
+                case NSBezierPathElementLineTo:
                     CGPathAddLineToPoint(path, NULL, pt[0].x, pt[0].y);
                     break;
-                case NSCurveToBezierPathElement:
+                case NSBezierPathElementCurveTo:
                     CGPathAddCurveToPoint(path, NULL, pt[0].x, pt[0].y, pt[1].x, pt[1].y, pt[2].x, pt[2].y);
                     break;
-                case NSClosePathBezierPathElement:
+                case NSBezierPathElementClosePath:
                     CGPathCloseSubpath(path);
             }
         }
