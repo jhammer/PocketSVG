@@ -6,7 +6,7 @@
  * file that was distributed with this source code.
  */
 
-#import "SVGBezierPath.h"
-#import "SVGImageView.h"
-#import "SVGLayer.h"
-#import "SVGEngine.h"
+#import <PocketSVG/SVGBezierPath.h>
+#import <PocketSVG/SVGImageView.h>
+#import <PocketSVG/SVGLayer.h>
+#import <PocketSVG/SVGEngine.h>

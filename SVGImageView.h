@@ -6,7 +6,7 @@
  * file that was distributed with this source code.
  */
 
-#import "SVGPortability.h"
+#import <PocketSVG/SVGPortability.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
